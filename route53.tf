@@ -6,7 +6,7 @@ resource "aws_route53_record" "rishi_cloud_dmarc" {
   }*/
 
 
-  for_each = toset( ["Todd", "James", "Alice", "Dottie"] )
+  for_each = toset( ["Todd", "James", "Alice"] )
 
   zone_id = "Z04404022GXE53ORHYKH3"
   name    = each.key
